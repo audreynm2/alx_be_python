@@ -26,7 +26,5 @@ if time_bound == "yes" and priority in ["high", "medium"]:
 elif time_bound == "no":
     reminder = f"Note: {reminder}. Consider completing it when you have free time."
 
-# Print the final customized reminder
-print(reminder)
-
-
+# Print the final customized reminder with the exact "Reminder:" prefix
+print(f"Reminder: {reminder}")
