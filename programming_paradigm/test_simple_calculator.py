@@ -20,9 +20,8 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(4, 5), 20)
         self.assertEqual(self.calc.multiply(-2, 3), -6)
         self.assertEqual(self.calc.multiply(0, 100), 0)
+        self.assertEqual(self.calc.multiply(-4, -5), 20)  # edge case
 
     def test_divide(self):
         self.assertEqual(self.calc.divide(10, 2), 5)
-        self.assertEqual(self.calc.divide(-6, 3), -2)
-        self.assertEqual(self.calc.divide(5, 2), 2.5)
-        self.assertIs
+        s
