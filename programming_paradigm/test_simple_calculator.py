@@ -24,4 +24,10 @@ class TestSimpleCalculator(unittest.TestCase):
 
     def test_divide(self):
         self.assertEqual(self.calc.divide(10, 2), 5)
-        s
+        self.assertEqual(self.calc.divide(-6, 3), -2)
+        self.assertEqual(self.calc.divide(5, 2), 2.5)
+        self.assertIsNone(self.calc.divide(5, 0))  # division by zero
+        self.assertEqual(self.calc.divide(0, 5), 0)  # zero numerator
+
+if __name__ == "__main__":
+    unittest.main()
